@@ -31,6 +31,8 @@ app.add_middleware(
 
 client = OpenAI() # expects OPENAI_API_KEY in env
 
+# Endpionts
+
 @app.post("/transcribe")
 async def transcribe_audio(file: UploadFile = File(...)):
     try:

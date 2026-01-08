@@ -13,6 +13,7 @@ echo "🚀 Starting PCG Toolkit..."
 
 # Start Backend (from root)
 echo "🔌 Starting Backend (Port 8000)..."
+source .venv/bin/activate
 uvicorn main:app --reload --port 8000 &
 
 # Start Frontend (from frontend dir)
