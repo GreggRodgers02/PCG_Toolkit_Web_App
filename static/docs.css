@@ -1,0 +1,130 @@
+/* Topbar styling */
+.swagger-ui .topbar {
+    background-color: #0b1220 !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 10px 0 !important;
+}
+
+/* Hide default Swagger logo and text */
+.swagger-ui .topbar .topbar-wrapper .link img,
+.swagger-ui .topbar .topbar-wrapper .link span {
+    display: none !important;
+}
+
+/* Add your custom logo */
+.swagger-ui .topbar .topbar-wrapper .link::before {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 200px;
+    background: url("/static/PCG_Toolkit_Logo.png") no-repeat left center;
+    background-size: contain;
+    margin-left: 20px;
+}
+
+/* Style the info section */
+.swagger-ui .info {
+    margin: 30px 0;
+}
+
+.swagger-ui .info .title {
+    font-size: 36px;
+    color: #0b1220;
+    font-weight: bold;
+}
+
+.swagger-ui .info .title small {
+    background-color: #0b1220;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* Customize the primary color scheme */
+.swagger-ui .btn.execute {
+    background-color: #0b1220 !important;
+    border-color: #0b1220 !important;
+    color: white !important;
+}
+
+.swagger-ui .btn.execute:hover {
+    background-color: #1a2744 !important;
+    border-color: #1a2744 !important;
+}
+
+/* Style the authorization button */
+.swagger-ui .btn.authorize {
+    background-color: #0b1220 !important;
+    border-color: #0b1220 !important;
+    color: white !important;
+}
+
+.swagger-ui .btn.authorize:hover {
+    background-color: #1a2744 !important;
+}
+
+/* Style operation blocks */
+.swagger-ui .opblock.opblock-post {
+    border-color: #0b1220 !important;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-summary-method {
+    background-color: #0b1220 !important;
+}
+
+.swagger-ui .opblock.opblock-post .opblock-summary {
+    border-color: #0b1220 !important;
+}
+
+/* Style the response/request tabs */
+.swagger-ui .tab li button.tablinks.active {
+    color: #0b1220 !important;
+    border-bottom: 2px solid #0b1220 !important;
+}
+
+/* Custom scrollbar (optional) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0b1220;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1a2744;
+}
+
+/* Style the schemas section */
+.swagger-ui .model-box {
+    border: 1px solid #0b1220 !important;
+}
+
+.swagger-ui .model-title {
+    color: #0b1220 !important;
+    font-weight: bold;
+}
+
+/* Add some polish to the overall design */
+.swagger-ui .wrapper {
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Style the contact info */
+.swagger-ui .info a {
+    color: #0b1220 !important;
+    font-weight: 500;
+}
+
+.swagger-ui .info a:hover {
+    color: #1a2744 !important;
+}
